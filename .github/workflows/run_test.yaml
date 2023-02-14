@@ -1,0 +1,18 @@
+name: Run Automated Test 🚀🚀
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  automation-test:
+    runs-on: [self-hosted, reqresintest]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Installing automation requirements 
+        run: npm install
+      - name: Running Automation Test 
+        id: test
+        run: |
+          npm test
