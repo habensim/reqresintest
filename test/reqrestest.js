@@ -26,7 +26,7 @@ describe('Testing Reqres', () => {
             .post('/api/users')
             .send(data)
             .then((res) => {
-                console.log(res.body);
+                console.log("Success" + res.body);
             });
     });
 });
