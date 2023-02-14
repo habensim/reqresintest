@@ -24,7 +24,6 @@ describe('Testing Reqres', () => {
         };
         return request
             .post('/api/users')
-            // .set('Authorization', `Bearer ${TOKEN}`)
             .send(data)
             .then((res) => {
                 console.log(res.body);
